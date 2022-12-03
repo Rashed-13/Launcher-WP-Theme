@@ -1,4 +1,4 @@
-;(function ($) {
+(function ($) {
 	
 	'use strict';
 
@@ -88,22 +88,16 @@
 	var countDown = function() {
 
 		simplyCountdown('.simply-countdown-one', {
-			year: "2022",
-			month: "12",
-			day: "30"
+			year: launch_date.year,
+			month: launch_date.month,
+			day: launch_date.day
 		});
 
 	};
-	
-	
-	
 	$(function(){
 		contentWayPoint();
 		loaderPage();
 		screenHeight();
 		countDown();
 	});
-
-
-
 }(jQuery));
